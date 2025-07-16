@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
             return classNames.footer();
         }
 
-        return "flex items-center justify-end pb-2.5 pt-3 border-t border-gray-300 dark:border-gray-700";
+        return "flex items-center justify-end pb-2.5 pt-3 border-t border-zinc-300 dark:border-zinc-700";
     }, [classNames]);
 
     return (

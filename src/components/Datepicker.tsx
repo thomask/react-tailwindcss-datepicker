@@ -331,7 +331,7 @@ const Datepicker = ({
 
     const pickerClassNameOverload = useMemo(() => {
         const defaultPickerClassName = classNamesUtil(
-            "shadow-sm border border-gray-300 px-1 py-0.5 bg-white dark:bg-slate-800 dark:text-white dark:border-slate-600 rounded-lg w-fit",
+            "shadow-sm border border-zinc-300 px-1 py-0.5 bg-white dark:bg-slate-800 dark:text-white dark:border-slate-600 rounded-lg w-fit",
             !inline && "mt-2.5"
         );
         return typeof pickerClassName === "function"
