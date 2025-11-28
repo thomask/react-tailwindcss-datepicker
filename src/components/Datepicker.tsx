@@ -46,8 +46,11 @@ const Datepicker = ({
     inline = false
 }: DatepickerType) => {
     // Ref
+    console.log("before containerRef");
     const containerRef = useRef<HTMLDivElement | null>(null);
+    console.log("before calendarContainerRef");
     const calendarContainerRef = useRef<HTMLDivElement | null>(null);
+    console.log("before arrowRef");
     const arrowRef = useRef<HTMLDivElement | null>(null);
 
     // State
