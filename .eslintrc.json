@@ -26,7 +26,6 @@
             "version": "detect"
         }
     },
-    "plugins": ["react", "@typescript-eslint", "import", "prettier", "@next/eslint-plugin-next"],
     "rules": {
         "indent": "off",
         "linebreak-style": ["error", "unix"],

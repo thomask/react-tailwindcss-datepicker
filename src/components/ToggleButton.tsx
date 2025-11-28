@@ -6,7 +6,7 @@ interface ToggleButtonProps {
     isEmpty: boolean;
 }
 
-const ToggleButton: React.FC<ToggleButtonProps> = (e: ToggleButtonProps): JSX.Element => {
+const ToggleButton: React.FC<ToggleButtonProps> = (e: ToggleButtonProps): React.ReactElement => {
     return e.isEmpty ? <DateIcon className="h-5 w-5" /> : <CloseIcon className="h-5 w-5" />;
 };
 

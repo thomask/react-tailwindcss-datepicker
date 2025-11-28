@@ -14,12 +14,12 @@ import {
 } from "../types";
 
 interface DatepickerStore {
-    input?: React.RefObject<HTMLInputElement>;
+    input?: React.RefObject<HTMLInputElement | null>;
     asSingle?: boolean;
     primaryColor: ColorKeys;
     configs?: Configs;
-    calendarContainer: React.RefObject<HTMLDivElement> | null;
-    arrowContainer: React.RefObject<HTMLDivElement> | null;
+    calendarContainer: React.RefObject<HTMLDivElement | null>;
+    arrowContainer: React.RefObject<HTMLDivElement | null>;
     hideDatepicker: () => void;
     period: Period;
     changePeriod: (period: Period) => void;
@@ -56,8 +56,8 @@ const DatepickerContext = createContext<DatepickerStore>({
     input: undefined,
     primaryColor: "blue",
     configs: undefined,
-    calendarContainer: null,
-    arrowContainer: null,
+    calendarContainer: React.createRef<HTMLDivElement>(),
+    arrowContainer: React.createRef<HTMLDivElement>(),
     period: { start: null, end: null },
     // eslint-disable-next-line @typescript-eslint/no-empty-function,@typescript-eslint/no-unused-vars
     changePeriod: period => {},

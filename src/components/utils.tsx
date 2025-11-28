@@ -8,7 +8,7 @@ interface IconProps {
 }
 
 interface Button {
-    children: JSX.Element | JSX.Element[];
+    children: React.ReactElement | React.ReactElement[];
     onClick: React.MouseEventHandler<HTMLButtonElement>;
     disabled?: boolean;
     roundedFull?: boolean;

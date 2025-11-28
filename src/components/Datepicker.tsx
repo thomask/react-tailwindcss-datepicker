@@ -46,12 +46,12 @@ const Datepicker = ({
     inline = false
 }: DatepickerType) => {
     // Ref
-    console.log("before containerRef");
-    const containerRef = useRef<HTMLDivElement | null>(null);
+    console.log("before conddtainerRef");
+    const containerRef = useRef<HTMLDivElement>(null);
     console.log("before calendarContainerRef");
-    const calendarContainerRef = useRef<HTMLDivElement | null>(null);
+    const calendarContainerRef = useRef<HTMLDivElement>(null);
     console.log("before arrowRef");
-    const arrowRef = useRef<HTMLDivElement | null>(null);
+    const arrowRef = useRef<HTMLDivElement>(null);
 
     // State
     const [firstDate, setFirstDate] = useState<dayjs.Dayjs>(
@@ -64,7 +64,9 @@ const Datepicker = ({
     });
     const [dayHover, setDayHover] = useState<string | null>(null);
     const [inputText, setInputText] = useState<string>("");
-    const [inputRef, setInputRef] = useState(React.createRef<HTMLInputElement>());
+    const [inputRef, setInputRef] = useState<React.RefObject<HTMLInputElement | null>>(
+        React.createRef<HTMLInputElement>()
+    );
 
     // Custom Hooks use
     useOnClickOutside(containerRef, () => {

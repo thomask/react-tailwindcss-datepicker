@@ -8,7 +8,7 @@ import { dateIsValid, parseFormattedDate } from "../helpers";
 import ToggleButton from "./ToggleButton";
 
 type Props = {
-    setContextRef?: (ref: React.RefObject<HTMLInputElement>) => void;
+    setContextRef?: (ref: React.RefObject<HTMLInputElement | null>) => void;
 };
 
 const Input: React.FC<Props> = (e: Props) => {

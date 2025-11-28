@@ -3,6 +3,7 @@ dist/
 assets/
 .next/
 .rollup.cache/
+pnpm-lock.yaml
 
 # Files
 README.md

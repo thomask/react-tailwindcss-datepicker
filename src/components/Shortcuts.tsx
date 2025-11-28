@@ -7,7 +7,7 @@ import DatepickerContext from "../contexts/DatepickerContext";
 import { Period, ShortcutsItem } from "../types";
 
 interface ItemTemplateProps {
-    children: JSX.Element;
+    children: React.ReactElement;
     key: number;
     item: ShortcutsItem | ShortcutsItem[];
 }
