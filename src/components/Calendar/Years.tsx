@@ -16,8 +16,8 @@ interface Props {
 const Years: React.FC<Props> = ({ year, currentYear, minYear, maxYear, clickYear }) => {
     const { dateLooking } = useContext(DatepickerContext);
 
-    let startDate = 0;
-    let endDate = 0;
+    let startDate: number;
+    let endDate: number;
 
     switch (dateLooking) {
         case "backward":

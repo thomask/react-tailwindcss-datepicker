@@ -321,9 +321,9 @@ const Days: React.FC<Props> = ({
                 }`;
 
                 if (period.start && !period.end) {
-                    dayjs(clickDay).isSame(dayHover) && continueClick();
+                    if (dayjs(clickDay).isSame(dayHover)) continueClick();
                 } else if (!period.start && period.end) {
-                    dayjs(clickDay).isSame(dayHover) && continueClick();
+                    if (dayjs(clickDay).isSame(dayHover)) continueClick();
                 } else {
                     continueClick();
                 }

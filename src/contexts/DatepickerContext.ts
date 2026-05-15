@@ -59,19 +59,19 @@ const DatepickerContext = createContext<DatepickerStore>({
     calendarContainer: React.createRef<HTMLDivElement>(),
     arrowContainer: React.createRef<HTMLDivElement>(),
     period: { start: null, end: null },
-    // eslint-disable-next-line @typescript-eslint/no-empty-function,@typescript-eslint/no-unused-vars
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     changePeriod: period => {},
-    // eslint-disable-next-line @typescript-eslint/no-empty-function
+
     hideDatepicker: () => {},
     dayHover: null,
-    // eslint-disable-next-line @typescript-eslint/no-empty-function,@typescript-eslint/no-unused-vars
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     changeDayHover: (day: string | null) => {},
     inputText: "",
-    // eslint-disable-next-line @typescript-eslint/no-empty-function,@typescript-eslint/no-unused-vars
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     changeInputText: text => {},
-    // eslint-disable-next-line @typescript-eslint/no-empty-function,@typescript-eslint/no-unused-vars
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     updateFirstDate: date => {},
-    // eslint-disable-next-line @typescript-eslint/no-empty-function,@typescript-eslint/no-unused-vars
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     changeDatepickerValue: (value: DateValueType, e: HTMLInputElement | null | undefined) => {},
     showFooter: false,
     value: null,

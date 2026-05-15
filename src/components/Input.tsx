@@ -78,8 +78,8 @@ const Input: React.FC<Props> = (e: Props) => {
             } else {
                 const parsed = inputValue.split(separator);
 
-                let startDate = null;
-                let endDate = null;
+                let startDate;
+                let endDate;
 
                 if (parsed.length === 2) {
                     startDate = parseFormattedDate(parsed[0], displayFormat);
