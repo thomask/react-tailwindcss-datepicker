@@ -12,7 +12,6 @@ interface ItemTemplateProps {
     item: ShortcutsItem | ShortcutsItem[];
 }
 
-// eslint-disable-next-line react/display-name
 const ItemTemplate = React.memo((props: ItemTemplateProps) => {
     const {
         primaryColor,

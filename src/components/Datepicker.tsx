@@ -62,6 +62,7 @@ const Datepicker = ({
     const [dayHover, setDayHover] = useState<string | null>(null);
     const [inputText, setInputText] = useState<string>("");
     const [inputRef, setInputRef] = useState<React.RefObject<HTMLInputElement | null>>(
+        // eslint-disable-next-line @eslint-react/no-create-ref -- ref is stored in component state, useRef returns a stable container that wouldn't be reassignable
         React.createRef<HTMLInputElement>()
     );
 

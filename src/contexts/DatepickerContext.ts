@@ -56,7 +56,9 @@ const DatepickerContext = createContext<DatepickerStore>({
     input: undefined,
     primaryColor: "blue",
     configs: undefined,
+    // eslint-disable-next-line @eslint-react/no-create-ref -- default context values cannot use the useRef hook
     calendarContainer: React.createRef<HTMLDivElement>(),
+    // eslint-disable-next-line @eslint-react/no-create-ref -- default context values cannot use the useRef hook
     arrowContainer: React.createRef<HTMLDivElement>(),
     period: { start: null, end: null },
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
